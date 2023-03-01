@@ -1,0 +1,144 @@
+/* Bordered form */
+
+#form {
+    background-clip: content-box;
+    align-items: center;
+    background-size: 50%;
+    border: 3px solid #f1f1f1;
+    padding: 5% 7%;
+}
+
+
+/* Full-width inputs */
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.btn input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.login-form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 0;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+}
+
+#form h1 p {
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+}
+
+#form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.DetailForm {
+    width: 400px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    border-radius: 20px;
+    float: left;
+}
+
+#butn {
+    background-color: rgb(9, 138, 99);
+    width: auto;
+    padding: 10px 18px;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+}
+
+#butn a {
+    cursor: pointer;
+    color: #ccc;
+    text-decoration: none;
+}
+
+.search {
+    color: #555;
+    display: flex;
+    padding: 2px;
+    border: 1px solid currentColor;
+    border-radius: 5px;
+    float: right;
+}
+
+input[type="search"] {
+    border: none;
+    background: transparent;
+    margin: 0;
+    padding: 7px 8px;
+    font-size: 14px;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: inherit;
+}
+
+input[type="search"]::placeholder {
+    color: #bbb;
+}
+
+#button[type="submit"]:hover {
+    opacity: 1;
+}
+
+#button[type="submit"]:focus,
+input[type="search"]:focus {
+    box-shadow: 0 0 3px 0 #1183d6;
+    border-color: #1183d6;
+    outline: none;
+}
+
+.body {
+    align-items: center;
+    padding: 5% 20%;
+}
+
+
+/* .wrap{
+  width: 30%;
+  position: absolute;
+  top: 5%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+} */
+
+#reset-password-btn {
+    align-items: center;
+    background-color: rgb(60, 60, 150);
+    border: none;
+    color: white;
+    padding: 5px 5px;
+}
+
+.search {
+    float: right;
+    padding-right: 0%;
+}
