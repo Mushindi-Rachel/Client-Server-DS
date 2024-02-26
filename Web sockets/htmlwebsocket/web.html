@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<body>
+   
+</body>
+</html>
+
+    <script type="text/javascript">
+        function WebSocketTest() {
+            if ("WebSocket" in window) {
+                alert("WebSocket is supported by your Browser!");
+
+                var ws = new WebSocket("ws://localhost:9998/echo");
+
+                ws.onopen = function() {
+                    alert("WebSocket connection opened.");
+                };
+
+                ws.onmessage = function(evt) {
+                    var received_msg = evt.data;
+                    alert("Message received: " + received_msg);
+                };
+
+                ws.onclose = function() {
+                    alert("WebSocket connection closed.");
+                };
+
+                document.getElementById("sendButton").onclick = function() {
+                    var messageToSend = document.getElementById("messageInput").value;
+                    ws.send(messageToSend);
+                    alert("Message sent: " + messageToSend);
+                };
+            } else {
+                alert("WebSocket is NOT supported by your Browser!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="sse">
+        <a href="javascript:WebSocketTest()">Run WebSocket</a><br>
+
+        <input type="text" id="messageInput" placeholder="Enter message"><br><br>
+        <button id="sendButton">Send Message</button>
+    </div>
+</body>
+</html>

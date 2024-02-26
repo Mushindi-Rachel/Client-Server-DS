@@ -13,5 +13,5 @@ echo "<script>alert('User details submitted successfully');</script>";
 
 
 $conn->close();
-header('Location: index.html');
+header('Location: index.php');
 ?>
